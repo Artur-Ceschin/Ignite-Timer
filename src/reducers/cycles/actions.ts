@@ -21,6 +21,6 @@ export function markCurrentCycleAsFinishedAction() {
 
 export function interruptedDateAction() {
   return {
-    type: ActionTypes.MARK_CURRENT_CYCLE_AS_FINISHED,
+    type: ActionTypes.INTERRUPT_NEW_CYCLE,
   }
 }

@@ -18,13 +18,10 @@ export function NewCycleForm() {
         list="task-suggestions"
         disabled={!!activeCycle}
         {...register('task')}
+        autoComplete="off"
       />
 
-      <datalist id="task-suggestions">
-        <option value="Projeto 1" />
-        <option value="Projeto 1" />
-        <option value="Projeto 1" />
-      </datalist>
+      {/* <datalist id="task-suggestions"></datalist> */}
 
       <label htmlFor="minutesAmount">Durante</label>
       <MinutesAmountMinute

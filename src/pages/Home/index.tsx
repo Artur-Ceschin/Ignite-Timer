@@ -41,7 +41,7 @@ export function Home() {
     reset()
   }
 
-  const isSubmitDisabled = !watch('task')
+  const isSubmitDisabled = !(watch('minutesAmount') && watch('task'))
 
   return (
     <HomeContainer>
